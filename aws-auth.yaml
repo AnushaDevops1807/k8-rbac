@@ -6,11 +6,11 @@ data:
       - system:nodes
       rolearn: arn:aws:iam::203918863001:role/eksctl-expense-nodegroup-expense-NodeInstanceRole-Qrv4xSuijIsb
       username: system:node:{{EC2PrivateDNSName}}
-mapUsers: |
+  mapUsers: |
     - groups:
       - default-trainee
       userarn: arn:aws:iam::203918863001:user/suresh
-      username: suresh      
+      username: suresh
 kind: ConfigMap
 metadata:
   creationTimestamp: "2025-03-18T01:13:50Z"
